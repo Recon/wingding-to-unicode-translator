@@ -268,7 +268,7 @@ class WingdingUnicodeTranslator
 
         for ($i = 0; $i < strlen($string); $i++) {
             $unicodeCharacter = $this->convertCharacter($string[$i]);
-            if ($string !== false) {
+            if ($unicodeCharacter !== false) {
                 $convertedString .= $unicodeCharacter;
             }
         }
